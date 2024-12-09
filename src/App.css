@@ -96,6 +96,19 @@
   background-color: #45a049;
 }
 
+/* Rounded buttons */
+button {
+    border-radius: 30px;  /* Make buttons more rounded */
+    padding: 12px 24px;
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition */
+}
+
+button:hover {
+    background-color: #4682B4;  /* Lighter blue on hover */
+    transform: scale(1.05);  /* Slightly enlarge the button on hover */
+}
+
+
 /* Product List */
 .product-list-container {
   position: absolute;
@@ -115,6 +128,35 @@
   top: 0;
 }
 
+/* Product cards with hover effect */
+.product-card {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Deeper shadow for a lifted effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition */
+    border-radius: 10px;  /* Rounded corners */
+    padding: 20px;
+    margin: 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);  /* Card moves up when hovered */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+}
+
+/* Card titles and descriptions */
+.product-card h3 {
+    font-size: 1.2rem;
+    color: #333;  /* Dark text for titles */
+    font-weight: 600;  /* Slightly bold text */
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;  /* Lighter text for description */
+    line-height: 1.4;
+}
+
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .content {
@@ -132,7 +174,7 @@
   }
 
   .content h1 {
-    font-size: 2rem;
+    font-size: 36px;
   }
 
   .content p {
